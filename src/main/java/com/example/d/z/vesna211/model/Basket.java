@@ -1,6 +1,7 @@
 package com.example.d.z.vesna211.model;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.annotation.SessionScope;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -8,6 +9,7 @@ import java.util.List;
 import java.util.Map;
 
 @Component
+@SessionScope
 public class Basket {
 
     private final Map<Integer,Integer> countByOrderId = new HashMap<>();
